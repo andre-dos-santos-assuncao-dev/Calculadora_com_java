@@ -59,6 +59,15 @@ public class Main {
             }
             int opcao = sc.nextInt();
 
+            while (opcao > 2) {
+                System.out.println("Digite o numero de uma opção");
+                try {
+                    opcao = sc.nextInt();
+                } catch (Exception e) {
+                    sc.next();
+                }
+            }
+
             if (opcao == 1) {
                 Calculadora();
             } else if (opcao == 2) {
